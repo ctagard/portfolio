@@ -47,7 +47,7 @@ export default function Header({ color }) {
     }, typingSpeed);
 
     return () => clearTimeout(timer);
-  }, [roleDisplay, isDeleting, typingSpeed, roles, currentRoleIndex]);
+  }, [roleDisplay, isDeleting, typingSpeed,currentRoleIndex]);
   return (
     <>
       <Heading>
