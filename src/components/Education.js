@@ -16,12 +16,12 @@ import {
   ListIcon,
   Button,
   ButtonGroup,
-  Badge, Heading, Link, SimpleGrid
+  Badge, Heading, SimpleGrid
 } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { Fade } from 'react-reveal';
 import EducationArray from './EducationArray';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export default function Experience({ color }) {
   const education = EducationArray();

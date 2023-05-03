@@ -5,13 +5,9 @@ import {
   Text,
   Button,
   Stack,
-  Icon,
-  useColorModeValue,
-  createIcon
 } from '@chakra-ui/react';
 import ProfileArray from './ProfileArray';
 import { useState, useEffect, React } from 'react';
-import Typist from 'react-typist';
 
 export default function Header({ color }) {
   const profile = ProfileArray();
@@ -24,33 +20,34 @@ export default function Header({ color }) {
     window.open(`${profile.linkedin}`, '_blank', 'noreferrer,noopener');
   };
 
-  const roles = ['ML engineer', 'software developer', 'data scientist'];
+
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [roleDisplay, setRoleDisplay] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   useEffect(() => {
-  const timer = setTimeout(() => {
-    if (!isDeleting && roleDisplay.length === roles[currentRoleIndex].length) {
-      setIsDeleting(true);
-      setTypingSpeed(50);
-    } else if (isDeleting && roleDisplay.length === 0) {
-      setIsDeleting(false);
-      setTypingSpeed(150);
-      setCurrentRoleIndex((currentRoleIndex + 1) % roles.length);
-    }
+    const roles = ['ML engineer', 'software developer', 'data scientist'];
+    const timer = setTimeout(() => {
+      if (!isDeleting && roleDisplay.length === roles[currentRoleIndex].length) {
+        setIsDeleting(true);
+        setTypingSpeed(50);
+      } else if (isDeleting && roleDisplay.length === 0) {
+        setIsDeleting(false);
+        setTypingSpeed(150);
+        setCurrentRoleIndex((currentRoleIndex + 1) % roles.length);
+      }
 
-    setRoleDisplay((prevRoleDisplay) => {
-      const newChar = roles[currentRoleIndex][prevRoleDisplay.length] || "";
-      return isDeleting
-        ? prevRoleDisplay.slice(0, prevRoleDisplay.length - 1)
-        : prevRoleDisplay + newChar;
-    });
-  }, typingSpeed);
+      setRoleDisplay((prevRoleDisplay) => {
+        const newChar = roles[currentRoleIndex][prevRoleDisplay.length] || '';
+        return isDeleting
+          ? prevRoleDisplay.slice(0, prevRoleDisplay.length - 1)
+          : prevRoleDisplay + newChar;
+      });
+    }, typingSpeed);
 
-  return () => clearTimeout(timer);
-}, [roleDisplay, isDeleting, typingSpeed, roles, currentRoleIndex]);
+    return () => clearTimeout(timer);
+  }, [roleDisplay, isDeleting, typingSpeed, roles, currentRoleIndex]);
   return (
     <>
       <Heading>

@@ -9,8 +9,8 @@
       <change afterPath="$PROJECT_DIR$/public/content/Education.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/content/EducationTags.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/ClassesArray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Education.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/EducationArray.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/content/Experience.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/Experience.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/content/ExperienceTags.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/ExperienceTags.md" afterDir="false" />
@@ -21,6 +21,7 @@
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Education.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Education.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experience.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ExperienceArray.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExperienceArray.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
@@ -84,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683052224912</updated>
-      <workItem from="1683052226502" duration="21651000" />
+      <workItem from="1683052226502" duration="22214000" />
     </task>
     <servers />
   </component>
