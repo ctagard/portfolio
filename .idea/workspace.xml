@@ -11,12 +11,8 @@
       <change afterPath="$PROJECT_DIR$/src/components/ClassesArray.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/EducationArray.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.073c9b0a.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.073c9b0a.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/787.1ed0c42c.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/787.1ed0c42c.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/static/js/main.a3c61179.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/static/js/main.a3c61179.js.LICENSE.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/static/js/main.a3c61179.js.map" beforeDir="false" />
@@ -104,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683052224912</updated>
-      <workItem from="1683052226502" duration="22258000" />
+      <workItem from="1683052226502" duration="22430000" />
     </task>
     <servers />
   </component>

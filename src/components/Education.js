@@ -27,8 +27,6 @@ export default function Experience({ color }) {
   const education = EducationArray();
   const [showClassesIndex, setShowClassesIndex] = useState(null);
 
-  const [classRevealStatus, setClassRevealStatus] = useState([]);
-
   const handleButtonClick = (index) => {
     if (showClassesIndex === index) {
       setShowClassesIndex(null);
