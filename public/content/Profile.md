@@ -4,7 +4,7 @@
 ## Header
 - Hi, my name is Cole. 
 - I'm a software engineer.
-- Excited to join your team!
+- ""
 
 ## About
 I am Cole Agard, a dedicated Data Scientist and Machine Learning Engineer with a passion for leveraging data-driven insights to create innovative solutions. As a UC Berkeley graduate, I hold a B.A. in Computer Science and am currently pursuing an M.S. in Data Science. My professional journey has been diverse, with internships at renowned organizations like OpenEye Scientific, Isomark LLC, and Los Alamos National Laboratory.
@@ -16,9 +16,9 @@ One of my proudest achievements is creating the Blacklight AutoML open-source li
 Outside of my professional life, I am an avid learner who enjoys staying current with the latest tech trends, exploring creative problem-solving techniques, and sharing my knowledge with others. My personal website serves as a platform to showcase my work, share my thoughts on emerging technologies, and connect with like-minded individuals in the field of data science and machine learning.
 
 ## Contact
-- LinkedIn: https://linkedin.com/in/username
+- LinkedIn: https://www.linkedin.com/in/cole-agard-25381b19b/
 - GitHub: https://github.com/username
-- Email: username@gmail.com
+- Email: cole.thomas.agard@gmail.com
 
 ## Logo
 - CA

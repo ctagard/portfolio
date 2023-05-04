@@ -14,6 +14,7 @@ import {
   List,
   ListItem,
   ListIcon,
+  Wrap,
   Button,
   ButtonGroup,
   Badge, Heading, SimpleGrid
@@ -25,13 +26,27 @@ import { useState } from 'react';
 
 export default function Experience({ color }) {
   const education = EducationArray();
+  console.log(education)
   const [showClassesIndex, setShowClassesIndex] = useState(null);
 
+  const [selected, setSelected] = useState('');
+  const handleSelected = (value) => {
+    setSelected(value);
+  };
   const handleButtonClick = (index) => {
     if (showClassesIndex === index) {
       setShowClassesIndex(null);
     } else {
       setShowClassesIndex(index);
+      setTimeout(() => {
+        const education = document.getElementById(`education-${index}`);
+        console.log(education);
+        if (education) {
+          education.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth' });
+        } else {
+          console.error('Element not found');
+        }
+      }, 100); // Adjust the delay as needed (in milliseconds)
     }
   };
 
@@ -57,7 +72,7 @@ export default function Experience({ color }) {
             {education
               .map((exp, index) => (
                 <Fade bottom>
-                  <Card key={exp.company} size='sm'>
+                  <Card key={exp.company} size='sm' id={`education-${index}`}>
                     <CardHeader>
                       <Flex justifyContent='space-between'>
                         <HStack>
@@ -72,64 +87,100 @@ export default function Experience({ color }) {
                         </Text>
                       </Flex>
                     </CardHeader>
-                    <CardBody>
-                      <Flex>
-                        <List align='left' spacing={3}>
-                          {exp.listItems.map((item, index) => (
-                            <ListItem key={index}>
-                              <ListIcon
-                                boxSize={6}
-                                as={ChevronRightIcon}
-                                color={`${color}.500`}
-                              />
-                              {item}
-                            </ListItem>
-                          ))}
-                        </List>
-                      </Flex>
-                    </CardBody>
-                    <ButtonGroup variant='outline' pl={4}>
-                      <Button
-                        colorScheme={showClassesIndex !== index ? `${color}` : 'gray'}
-                        onClick={() => handleButtonClick(index)}
-                      >
-                        Classes
-                      </Button>
-                    </ButtonGroup>
+
+                    {showClassesIndex !== index && (
+                      <ButtonGroup variant='outline' pl={4} justifyContent={'center'}>
+                        <Button
+                          colorScheme={showClassesIndex !== index ? `${color}` : 'gray'}
+                          onClick={() => handleButtonClick(index)}
+                        >
+                          more
+                        </Button>
+                      </ButtonGroup>
+                    )}
 
                     {showClassesIndex === index && (
-                      <SimpleGrid columns={[1, 2, 3]} px={4} spacing={4}>
-                        {exp.classes
-                          .map((classname, classIndex) => (
-                            <Fade
-                              right
-                              delay={classIndex * 200}
+                      <div>
+                        <Stack align='center' direction='row' px={1}>
+                          <HStack mx={4}>
+                            <Text color={`${color}.400`} fontWeight={800}>
+                              01
+                            </Text>
+                            <Text fontWeight={800}>Overview</Text>
+                          </HStack>
+                          <Divider orientation='horizontal' />
+                        </Stack>
+                        <CardBody>
+                          <Flex>
+                            <List align='left' spacing={3}>
+                              {exp.listItems.map((item, index) => (
+                                <ListItem key={index} pl={6}>
+                                  <ListIcon
+                                    boxSize={6}
+                                    as={ChevronRightIcon}
+                                    color={`${color}.500`}
+                                  />
+                                  {item}
+                                </ListItem>
+                              ))}
+                            </List>
+                          </Flex>
+                        </CardBody>
+                        <Stack align='center' direction='row' py={4} px={1}>
+                          <HStack mx={4}>
+                            <Text color={`${color}.400`} fontWeight={800}>
+                              02
+                            </Text>
+                            <Text fontWeight={800}>Classes</Text>
+                          </HStack>
+                          <Divider orientation='horizontal' />
+                        </Stack>
+                        <ButtonGroup variant='outline' justifyContent={'center'}>
+                          <Wrap spacing={2} px={4}>
+                          {exp.tags.map((option) => (
+                            <Button
+                              colorScheme={selected === option ? `${color}` : 'gray'}
+                              onClick={() => handleSelected(option)}
                             >
-                              <Card key={classname.name}>
-                                <Stack>
-                                  <CardBody align='left' h={[null, '40vh']}>
-                                    <Heading size='sm'>{classname.name}</Heading>
-
-                                    <Text fontSize='sm' py={2}>
-                                      {classname.description}
-                                    </Text>
-                                    <HStack flexWrap='wrap' pt={4} spacing={2}>
-                                      {classname.badges.map((badge) => (
-                                        <Badge
-                                          my={2}
-                                          key={badge.text}
-                                          colorScheme={badge.colorScheme}
-                                        >
-                                          {badge.text}
-                                        </Badge>
-                                      ))}
-                                    </HStack>
-                                  </CardBody>
-                                </Stack>
-                              </Card>
-                            </Fade>
+                              {option}
+                            </Button>
                           ))}
-                      </SimpleGrid>
+                          </Wrap>
+                        </ButtonGroup>
+                        <SimpleGrid columns={[1, 2, 3]} px={4} spacing={4} pl={6}>
+                          {exp.classes
+                            .filter((classname) => classname.tags.includes(selected))
+                            .map((classname, classIndex) => (
+                              <Fade
+                                right
+                                delay={classIndex * 100}
+                              >
+                                <Card key={classname.name}>
+                                  <Stack>
+                                    <CardBody align='left' h={[null, '40vh']}>
+                                      <Heading size='sm'>{classname.name}</Heading>
+
+                                      <Text fontSize='sm' py={2}>
+                                        {classname.description}
+                                      </Text>
+                                      <HStack flexWrap='wrap' pt={4} spacing={2}>
+                                        {classname.badges.map((badge) => (
+                                          <Badge
+                                            my={2}
+                                            key={badge.text}
+                                            colorScheme={badge.colorScheme}
+                                          >
+                                            {badge.text}
+                                          </Badge>
+                                        ))}
+                                      </HStack>
+                                    </CardBody>
+                                  </Stack>
+                                </Card>
+                              </Fade>
+                            ))}
+                        </SimpleGrid>
+                      </div>
                     )}
                     <CardFooter>
                     </CardFooter>

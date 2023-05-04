@@ -5,48 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62424590-ac2e-4b19-adc1-a15e0fa83111" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/content/ClassTags.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/content/EducationTags.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ClassesArray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EducationArray.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.9b0549e2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.9b0549e2.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.9b0549e2.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.a3c61179.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.a3c61179.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.a3c61179.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/auto_labeling.ae345ff6ad5123d3af97.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/bs.45adb726cc3df9ce3919.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/construcshare.456c9c4dafe7524a6a82.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/music.aa3b6aa57504ac4f98be.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/nk.4f0fe04f6c71c42be6b6.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/pixel_duck.0afd4990a7b83ed5bf13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/scales_io.1cb6279296917d6ee9e9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/sharenstay.e73c9d7edb39fbe9f9bd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/tps_site.376117ca4f146eb322a5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/ura.6ab71737331cd6ae3654.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/content/Education.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/Education.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/content/Experience.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/Experience.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/content/ExperienceTags.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/ExperienceTags.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/content/OtherProjects.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/OtherProjects.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/content/EducationTags.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/EducationTags.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/content/Profile.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/Profile.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/content/Projects.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/Projects.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/content/ProjectsTags.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/ProjectsTags.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Education.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Education.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EducationArray.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EducationArray.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experience.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ExperienceArray.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExperienceArray.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +43,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
@@ -103,7 +70,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683052224912</updated>
-      <workItem from="1683052226502" duration="23672000" />
+      <workItem from="1683052226502" duration="24745000" />
+      <workItem from="1683216065479" duration="52000" />
+      <workItem from="1683216120037" duration="12027000" />
     </task>
     <servers />
   </component>
