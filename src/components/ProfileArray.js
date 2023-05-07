@@ -26,13 +26,11 @@ const parseProfile = (mdContent) => {
         case "Header":
           profile.headerName = lines[++i].substr(2).trim();
           profile.headerRole = lines[++i].substr(2).trim();
-          profile.headerDesc = lines[++i].substr(2).trim();
           break;
         case "About":
           profile.about = lines[++i].trim();
           break;
         case "Contact":
-          profile.contact = lines[++i].trim();
           const contactLinks = ["LinkedIn", "GitHub", "Email"];
           for (const link of contactLinks) {
             const linkLine = lines[++i].substr(2).trim();

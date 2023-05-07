@@ -26,7 +26,7 @@ import { useState } from 'react';
 
 export default function Experience({ color }) {
   const education = EducationArray();
-  console.log(education)
+  console.log(education);
   const [showClassesIndex, setShowClassesIndex] = useState(null);
 
   const [selected, setSelected] = useState('');
@@ -52,7 +52,7 @@ export default function Experience({ color }) {
 
   return (
     <>
-      <Container maxW={'3xl'} id='education'>
+      <Container maxW={'4xl'} id='education'>
         <Stack
           as={Box}
           textAlign={'center'}
@@ -78,7 +78,19 @@ export default function Experience({ color }) {
                         <HStack>
                           <Image src={exp.image} h={50} />
                           <Box px={2} align='left'>
-                            <Text fontWeight={600}>{exp.company}</Text>
+                            <Flex alignItems={'baseline'}>
+                              <Text fontWeight={600}>{exp.company}</Text>
+                              <HStack flexWrap='wrap' pt={4} spacing={2} ml={4}>
+                                {exp.badges.map((badge) => (
+                                  <Badge
+                                    key={badge.name}
+                                    colorScheme={badge.colorScheme}
+                                  >
+                                    {badge.name}
+                                  </Badge>
+                                ))}
+                              </HStack>
+                            </Flex>
                             <Text>{exp.position}</Text>
                           </Box>
                         </HStack>
@@ -115,12 +127,16 @@ export default function Experience({ color }) {
                             <List align='left' spacing={3}>
                               {exp.listItems.map((item, index) => (
                                 <ListItem key={index} pl={6}>
-                                  <ListIcon
-                                    boxSize={6}
-                                    as={ChevronRightIcon}
-                                    color={`${color}.500`}
-                                  />
-                                  {item}
+                                  <Flex wrap='nowrap'>
+                                    <ListIcon
+                                      boxSize={6}
+                                      as={ChevronRightIcon}
+                                      color={`${color}.500`}
+                                    />
+                                    <Text ml={2} display='block'>
+                                      {item}
+                                    </Text>
+                                  </Flex>
                                 </ListItem>
                               ))}
                             </List>
@@ -137,14 +153,14 @@ export default function Experience({ color }) {
                         </Stack>
                         <ButtonGroup variant='outline' justifyContent={'center'}>
                           <Wrap spacing={2} px={4}>
-                          {exp.tags.map((option) => (
-                            <Button
-                              colorScheme={selected === option ? `${color}` : 'gray'}
-                              onClick={() => handleSelected(option)}
-                            >
-                              {option}
-                            </Button>
-                          ))}
+                            {exp.tags.map((option) => (
+                              <Button
+                                colorScheme={selected === option ? `${color}` : 'gray'}
+                                onClick={() => handleSelected(option)}
+                              >
+                                {option}
+                              </Button>
+                            ))}
                           </Wrap>
                         </ButtonGroup>
                         <SimpleGrid columns={[1, 2, 3]} px={4} spacing={4} pl={6}>

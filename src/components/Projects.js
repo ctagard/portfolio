@@ -12,44 +12,44 @@ import {
   Image,
   Heading,
   SimpleGrid,
-  Badge,
   Link,
   Center, Wrap
 } from '@chakra-ui/react';
-import { Fade } from "react-reveal";
-import { useState } from "react";
-import ProjectsArray from "./ProjectsArray";
-import OtherProjectsArray from "./OtherProjectsArray";
-import TagsArray from "./TagsArray";
+import { Fade } from 'react-reveal';
+import { useState } from 'react';
+import ProjectsArray from './ProjectsArray';
+import OtherProjectsArray from './OtherProjectsArray';
+import TagsArray from './TagsArray';
 
 export default function Projects({ color }) {
-    const projects = ProjectsArray();
-    const others = OtherProjectsArray();
-    const options = TagsArray("ProjectsTags");
-    
-    const [selected, setSelected] = useState("All");
+  const projects = ProjectsArray();
+  const others = OtherProjectsArray();
+  console.log('Others: ', others);
+  const options = TagsArray('ProjectsTags');
 
-    const handleSelected = (value) => {
-      setSelected(value);
-    };
-    
+  const [selected, setSelected] = useState('All');
+
+  const handleSelected = (value) => {
+    setSelected(value);
+  };
+
   return (
     <>
-      <Container maxW={"3xl"} id="projects">
+      <Container maxW={'4xl'} id='projects'>
         <Stack
           as={Box}
-          textAlign={"center"}
+          textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
           pb={{ base: 20, md: 36 }}
         >
-          <Stack align="center" direction="row" p={4}>
+          <Stack align='center' direction='row' p={4}>
             <HStack mx={4}>
               <Text color={`${color}.400`} fontWeight={800}>
                 04
               </Text>
               <Text fontWeight={800}>Projects</Text>
             </HStack>
-            <Divider orientation="horizontal" />
+            <Divider orientation='horizontal' />
           </Stack>
           <Stack px={4} spacing={4}>
             {projects.map((project) => (
@@ -57,15 +57,15 @@ export default function Projects({ color }) {
                 <Card
                   key={project.name}
                   direction={{
-                    base: "column",
+                    base: 'column'
                   }}
-                  overflow="hidden"
+                  overflow='hidden'
                 >
-                  <Image objectFit="cover" src={project.image} />
+                  <Image objectFit='cover' src={project.image} />
 
                   <Stack>
-                    <CardBody align="left">
-                      <Heading size="md">{project.name}</Heading>
+                    <CardBody align='left'>
+                      <Heading size='md'>{project.name}</Heading>
 
                       <Text py={2}>{project.description}</Text>
 
@@ -84,7 +84,7 @@ export default function Projects({ color }) {
                             key={badge.name}
                             src={badge.colorScheme}
                             alt={badge.name}
-                            />
+                          />
                         ))}
                       </Wrap>
                     </CardBody>
@@ -93,31 +93,33 @@ export default function Projects({ color }) {
               </Fade>
             ))}
           </Stack>
-          <Text color={"gray.600"} fontSize={"xl"} px={4}>
+          <Text color={'gray.500'} fontSize={'xl'} px={4}>
             Open Source Contributions
           </Text>
           <Center px={4}>
-            <ButtonGroup variant="outline">
-              <Button
-                colorScheme={selected === "All" ? `${color}` : "gray"}
-                onClick={() => handleSelected("All")}
-              >
-                All
-              </Button>
-              {options.map((option) => (
+            <ButtonGroup variant='outline'>
+              <Wrap spacing={2} px={4}>
                 <Button
-                  colorScheme={selected === option.value ? `${color}` : "gray"}
-                  onClick={() => handleSelected(option.value)}
+                  colorScheme={selected === 'All' ? `${color}` : 'gray'}
+                  onClick={() => handleSelected('All')}
                 >
-                  {option.value}
+                  All
                 </Button>
-              ))}
+                {options.map((option) => (
+                  <Button
+                    colorScheme={selected === option.value ? `${color}` : 'gray'}
+                    onClick={() => handleSelected(option.value)}
+                  >
+                    {option.value}
+                  </Button>
+                ))}
+              </Wrap>
             </ButtonGroup>
           </Center>
           <SimpleGrid columns={[1, 2, 3]} px={4} spacing={4}>
             {others
               .filter((other) => {
-                if (selected === "All") {
+                if (selected === 'All') {
                   return true;
                 } else {
                   return other.tags.includes(selected);
@@ -127,13 +129,11 @@ export default function Projects({ color }) {
                 <Fade bottom>
                   <Card key={other.name}>
                     <Stack>
-                      <CardBody align="left" h={[null, "40vh"]}>
-                        <Heading size="sm">{other.name}</Heading>
-
-                        <Text fontSize="sm" py={2}>
+                      <CardBody align='left' h={[null, '40vh']}>
+                        <Heading size='sm'>{other.name}</Heading>
+                        <Text fontSize='sm' py={2}>
                           {other.description}
                         </Text>
-
                         <HStack spacing={2}>
                           {other.buttons.map((button) => (
                             <Link
@@ -145,17 +145,15 @@ export default function Projects({ color }) {
                             </Link>
                           ))}
                         </HStack>
-                        <HStack flexWrap="wrap" pt={4} spacing={2}>
+                        <Wrap spacing={2}>
                           {other.badges.map((badge) => (
-                            <Badge
-                              my={2}
-                              key={badge.text}
-                              colorScheme={badge.colorScheme}
-                            >
-                              {badge.text}
-                            </Badge>
+                            <Image
+                              key={badge.name}
+                              src={badge.colorScheme}
+                              alt={badge.name}
+                            />
                           ))}
-                        </HStack>
+                        </Wrap>
                       </CardBody>
                     </Stack>
                   </Card>

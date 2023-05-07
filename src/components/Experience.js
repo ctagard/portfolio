@@ -30,7 +30,6 @@ export default function Experience({ color }) {
   const options = TagsArray('ExperienceTags');
   const [selected, setSelected] = useState('');
   const [skills, setSkills] = useState(null);
-  const [specifics, setSpecifics] = useState([]);
 
   useEffect(() => {
     if (options.length > 0) {
@@ -52,7 +51,7 @@ export default function Experience({ color }) {
 
   return (
     <>
-      <Container maxW={'3xl'} id='experience'>
+      <Container maxW={'4xl'} id='experience'>
         <Stack
           as={Box}
           textAlign={'center'}

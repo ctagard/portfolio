@@ -13,6 +13,7 @@ import ProfileArray from "./ProfileArray";
 
 export default function Contact({ color }) {
   const profile = ProfileArray();
+  console.log(profile);
   const linkedin = () => {
     window.open(`${profile.linkedin}`, "_blank", "noreferrer,noopener");
   };
@@ -42,12 +43,6 @@ export default function Contact({ color }) {
           </Stack>
           <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
             <Heading fontSize={"3xl"}>Let's stay in touch!</Heading>
-            <Text color={"gray.600"} fontSize={"xl"} px={4}>
-              {profile.contact}
-            </Text>
-            <Text color={`${color}.500`} fontWeight={600} fontSize={"lg"} px={4}>
-              {profile.email}
-            </Text>
             <Center>
               <HStack pt={4} spacing={4}>
                 <FaLinkedin onClick={linkedin} size={28} />
