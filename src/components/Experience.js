@@ -30,6 +30,7 @@ export default function Experience({ color }) {
   const options = TagsArray('ExperienceTags');
   const [selected, setSelected] = useState('');
   const [skills, setSkills] = useState(null);
+  const [specifics, setSpecifics] = useState([]);
 
   useEffect(() => {
     if (options.length > 0) {
@@ -125,7 +126,7 @@ export default function Experience({ color }) {
                         colorScheme={skills !== index ? `${color}` : 'gray'}
                         onClick={() => handleSkills(index)}
                       >
-                        skills
+                        technologies
                       </Button>
                     </ButtonGroup>
                     <CardFooter>

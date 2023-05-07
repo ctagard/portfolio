@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62424590-ac2e-4b19-adc1-a15e0fa83111" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/companies/OpenEye.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/content/Education.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/Education.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/content/EducationTags.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/EducationTags.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/content/Profile.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/Profile.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Education.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Education.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EducationArray.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EducationArray.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experience.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +67,7 @@
       <updated>1683052224912</updated>
       <workItem from="1683052226502" duration="24745000" />
       <workItem from="1683216065479" duration="52000" />
-      <workItem from="1683216120037" duration="12027000" />
+      <workItem from="1683216120037" duration="13518000" />
     </task>
     <servers />
   </component>
