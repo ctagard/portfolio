@@ -17,7 +17,7 @@ const parseEducation = (mdContent) => {
       const duration = positionLine[1].trim();
       const imageLine = lines[++i];
       const image = imageLine.match(/!\[(.*)\]\((.*)\)/)[2];
-      const tags = lines[++i].split(':')[1].trim();
+      const tags = lines[++i].split(":")[1].trim().split(",").map(tag => tag.trim());
       const badges = [];
       const listItems = [];
       const classes = [];
@@ -40,6 +40,7 @@ const parseEducation = (mdContent) => {
         if (lines[i].includes('#')) {
           const line = lines[i];
           const className = line.substr(3).trim();
+          const classTags = lines[++i].split(":")[1].trim().split(",").map(tag => tag.trim());
           const descriptionLine = lines[++i];
           const description = descriptionLine.substr(4).trim();
           const classBadges = [];
@@ -50,10 +51,10 @@ const parseEducation = (mdContent) => {
             classBadges.push({ text: badgeName, colorScheme: badgeColor });
           }
           i--;
-          console.log("classBadges", classBadges)
           classes.push({
             name: className,
             description: description,
+            tags: classTags,
             badges: classBadges
           });
         }
