@@ -15,6 +15,7 @@ import {
   Link,
   Center, Wrap
 } from '@chakra-ui/react';
+import { useBreakpointValue } from '@chakra-ui/media-query';
 import { Fade } from 'react-reveal';
 import { useState } from 'react';
 import ProjectsArray from './ProjectsArray';
@@ -24,7 +25,7 @@ import TagsArray from './TagsArray';
 export default function Projects({ color }) {
   const projects = ProjectsArray();
   const others = OtherProjectsArray();
-  console.log('Others: ', others);
+  const isMobile = useBreakpointValue({ base: true, md: false });
   const options = TagsArray('ProjectsTags');
 
   const [selected, setSelected] = useState('All');
@@ -35,7 +36,7 @@ export default function Projects({ color }) {
 
   return (
     <>
-      <Container maxW={'4xl'} id='projects'>
+      <Container maxW={isMobile ? '3xl' : '4xl'} id='projects'>
         <Stack
           as={Box}
           textAlign={'center'}

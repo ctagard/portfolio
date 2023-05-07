@@ -6,10 +6,12 @@ import {
   Button,
   Stack,
 } from '@chakra-ui/react';
+import { useBreakpointValue } from '@chakra-ui/media-query';
 import ProfileArray from './ProfileArray';
 import { useState, useEffect, React } from 'react';
 
 export default function Header({ color }) {
+  const isMobile = useBreakpointValue({ base: true, md: false });
   const profile = ProfileArray();
 
   const scrollToContact = () => {
@@ -57,7 +59,7 @@ export default function Header({ color }) {
         />
       </Heading>
 
-      <Container maxW={'4xl'} id='hero'>
+      <Container maxW={isMobile ? '3xl' : '4xl'} id='hero'>
         <Stack
           as={Box}
           textAlign={'center'}

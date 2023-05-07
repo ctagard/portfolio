@@ -7,12 +7,14 @@ import {
   HStack,
 } from "@chakra-ui/react";
 import ProfileArray from "./ProfileArray";
+import { useBreakpointValue } from '@chakra-ui/media-query';
 
 export default function About({ color }) {
   const profile = ProfileArray();
+  const isMobile = useBreakpointValue({ base: true, md: false });
     return (
       <>
-        <Container maxW={"4xl"} id="about">
+        <Container maxW={isMobile ? "3xl" : "4xl"} id="about">
           <Stack
             as={Box}
             textAlign={"center"}
