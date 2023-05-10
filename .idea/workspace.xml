@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62424590-ac2e-4b19-adc1-a15e0fa83111" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/css/IFrame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/content/Projects.md" beforeDir="false" afterPath="$PROJECT_DIR$/build/content/Projects.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.073c9b0a.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.073c9b0a.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.cd99df06.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.cd99df06.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.cd99df06.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/content/Projects.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/content/Projects.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/css/IFrame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/css/IFrame.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +69,7 @@
       <workItem from="1683052226502" duration="24745000" />
       <workItem from="1683216065479" duration="52000" />
       <workItem from="1683559354728" duration="4291000" />
-      <workItem from="1683658759974" duration="5913000" />
+      <workItem from="1683658759974" duration="7723000" />
     </task>
     <servers />
   </component>

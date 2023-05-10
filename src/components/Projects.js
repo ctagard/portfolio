@@ -37,6 +37,10 @@ export default function Projects({ color }) {
     setSelected(value);
   };
 
+  const handleIframeClick = () => {
+    window.open('https://example.com', '_blank');
+  };
+
   return (
     <>
       <Container maxW={isMobile ? '3xl' : '4xl'} id='projects'>
@@ -66,11 +70,15 @@ export default function Projects({ color }) {
                   overflow='hidden'
                 >
                   <AspectRatio ratio={16 / 9}>
-                      <iframe
-                        className={'project__iframe'}
-                        title={`Project-${index}`}
-                        src={project.image}
-                      />
+                    <div className='iframe-wrapper' onClick={handleIframeClick}>
+                      <div className='scrolling-container'>
+                        <iframe
+                          className={'project__iframe'}
+                          title={`Project-${index}`}
+                          src={project.image}
+                        />
+                      </div>
+                    </div>
                   </AspectRatio>
 
                   <Stack>

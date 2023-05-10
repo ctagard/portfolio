@@ -1,4 +1,11 @@
-.project__iframe {
+.scrolling-container {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
+.project__iframe {
+  width: 100%;
+  height: 100%;
+  /* Add other styles for the iframe if needed */
+}
