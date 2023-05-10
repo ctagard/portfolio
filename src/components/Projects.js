@@ -13,7 +13,9 @@ import {
   Heading,
   SimpleGrid,
   Link,
-  Center, Wrap
+  Center,
+  Wrap,
+  AspectRatio
 } from '@chakra-ui/react';
 import { useBreakpointValue } from '@chakra-ui/media-query';
 import { Fade } from 'react-reveal';
@@ -21,6 +23,7 @@ import { useState } from 'react';
 import ProjectsArray from './ProjectsArray';
 import OtherProjectsArray from './OtherProjectsArray';
 import TagsArray from './TagsArray';
+import './css/IFrame.css';
 
 export default function Projects({ color }) {
   const projects = ProjectsArray();
@@ -53,7 +56,7 @@ export default function Projects({ color }) {
             <Divider orientation='horizontal' />
           </Stack>
           <Stack px={4} spacing={4}>
-            {projects.map((project) => (
+            {projects.map((project, index) => (
               <Fade bottom>
                 <Card
                   key={project.name}
@@ -62,7 +65,13 @@ export default function Projects({ color }) {
                   }}
                   overflow='hidden'
                 >
-                  <Image objectFit='cover' src={project.image} />
+                  <AspectRatio ratio={16 / 9}>
+                      <iframe
+                        className={'project__iframe'}
+                        title={`Project-${index}`}
+                        src={project.image}
+                      />
+                  </AspectRatio>
 
                   <Stack>
                     <CardBody align='left'>

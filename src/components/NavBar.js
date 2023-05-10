@@ -100,7 +100,7 @@ export default function Nav({ color }) {
         </Link>
 
         <Flex alignItems={"center"}>
-          <Stack direction={"row"} spacing={7}>
+          <Stack direction={"row"} spacing={1}>
             {isLargerThanMD ? (
               <>
                 <Button variant="ghost" onClick={scrollToAbout}>
