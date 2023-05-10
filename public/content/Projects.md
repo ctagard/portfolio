@@ -14,7 +14,22 @@ Blacklight is a cutting-edge work-in-progress project, currently the subject of 
   - docker [../assets/docker.svg]
   - kubernetes [../assets/kubernetes.svg]
   - aws [../assets/aws.svg]
+  - netlify [../assets/netlify.svg]
+  - githubActions [../assets/githubactions.svg]
 - Buttons:
   - Website [https://blacklightlabs.netlify.app]
   - Github [https://github.com/BlackLightLabs/blacklight]
   - PyPi [https://pypi.org/project/blacklight/]
+
+## Django Ecommerce Website
+A full-stack ecommerce website built with Django, React, and Redux. The website features a fully functional shopping cart, product reviews, product ratings, product search, user profile with orders, admin product management, admin user management, and checkout process with Paypal and credit card payments which are not active as this is not a real business at the moment.
+- ![600x200](https://django-ecommerce-website.herokuapp.com/#/)
+- Tags: Personal Project
+- Badges: 
+  - python [../assets/python.svg]
+  - django [../assets/django.svg]
+  - react [../assets/react.svg]
+  - redux [../assets/redux.svg]
+  - javascript [../assets/javascript.svg]
+  - heroku [../assets/heroku.svg]
+  - aws [../assets/aws.svg]
