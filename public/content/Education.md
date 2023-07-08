@@ -1,4 +1,4 @@
-## Master of Data Science
+## Master of Information and Data Science
 - *University of California, Berkeley* | Jan'23 - May'24 
 - ![ucb-logo](https://upload.wikimedia.org/wikipedia/commons/a/a1/Seal_of_University_of_California%2C_Berkeley.svg)
 - Tags: Data Science, Computer Science, Machine Learning
