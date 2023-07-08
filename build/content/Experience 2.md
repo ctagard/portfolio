@@ -1,0 +1,62 @@
+## OpenEye Scientific
+- *Machine Learning Engineer Intern* | May'22 - Aug'22
+- ![logo512](../assets/openeye.png)
+- Tags: Machine Learning, All
+- Badges:
+  - python [../assets/python.svg]
+  - rust [../assets/rust.svg]
+  - scikitlearn [../assets/scikitlearn.svg]
+  - tensorflow [../assets/tensorflow.svg]
+  - pandas [../assets/pandas.svg]
+  - numpy [../assets/numpy.svg]
+  - scipy [../assets/scipy.svg]
+  - jupyter [../assets/jupyter.svg]
+  - plotly [../assets/plotly.svg]
+  - docker [../assets/docker.svg]
+  - kubernetes [../assets/kubernetes.svg]
+  - aws [../assets/aws.svg]
+- List Items:
+  - Created unsupervised machine learning classifier to create diverse subsets of billion molecule datasets for pharmaceutical high throughput virtual screening to save upwards of $10,000 per screen.
+  - Prototyped machine learning applications and quickly determined application viability with documentation to support conclusions.
+  - Developed distributed approaches to scale algorithms to billions of data points utilizing multiprocessing.
+
+## Isomark Health
+- *Machine Learning Engineer Intern* | May'20 - Jan'22
+- ![isomark](../assets/isomark.svg)
+- Tags: Machine Learning, All
+- Badges:
+  - Python [../assets/python.svg]
+  - TensorFlow [../assets/tensorflow.svg]
+  - Scikit-Learn [../assets/scikitlearn.svg]
+  - Pandas [../assets/pandas.svg]
+  - NumPy [../assets/numpy.svg]
+  - Jupyter [../assets/jupyter.svg]
+  - mlflow [../assets/mlflow.svg]
+  - PostgreSQL [../assets/postgres.svg]
+  - Redis [../assets/redis.svg]
+  - sqlite [../assets/sqlite.svg]
+  - Docker [../assets/docker.svg]
+  - Kubernetes [../assets/kubernetes.svg]
+  - AWS [../assets/aws.svg]
+- List Items:
+  - Designed and deployed a supervised machine learning classifier to predict binary indicators of animal illness from device data with 94% accuracy, effectively summarizing results for the client.
+  - Built and maintained data pipelines with Docker and Kubernetes, migrating data from diagnostic devices to Amazon Web Services S3, advancing Isomark’s cloud-based data practices.
+  - Delivered well-documented, unit-tested systems with required characteristics within client-defined timeframes.
+
+## Los Alamos National Labs
+- *Software Engineering Intern* | May'19 - Oct'21
+- ![lanl-logo](../assets/lanl-logo.png)
+- Tags: Software Engineering, All
+- Badges:
+  - Python [../assets/python.svg]
+  - Django [../assets/django.svg]
+  - PostgreSQL [../assets/postgres.svg]
+  - Redis [../assets/redis.svg]
+  - sqlite [../assets/sqlite.svg]
+  - Docker [../assets/docker.svg]
+  - Kubernetes [../assets/kubernetes.svg]
+  - React [../assets/react.svg]
+- List Items:
+  - Built Django application for simulation of radioactive detectability, with 1000 active users in the Department of Homeland Security.
+  - Modernized software by migrating Python 2 code to Python 3, reducing the technical debt of the team. 
+  - Created a high-performance website based on DHS specifications and successfully delivered the project ahead of deadlines.

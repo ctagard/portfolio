@@ -76,8 +76,15 @@ export default function Projects({ color }) {
                           className={'project__iframe'}
                           title={`Project-${index}`}
                           src={project.image}
+                          sandbox='allow-scripts allow-same-origin'
                         />
+                        <div className='overlay' onClick={(e) => {
+                          e.stopPropagation();
+                          console.log(`Opening ${project.image}`);
+                          window.open(project.image, '_blank');
+                        }}></div>
                       </div>
+
                     </div>
                   </AspectRatio>
 

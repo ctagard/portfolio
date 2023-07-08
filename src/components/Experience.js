@@ -12,13 +12,13 @@ import {
   Flex,
   Image,
   List,
+  ListItem,
   ListIcon,
   Button,
   ButtonGroup,
   Center,
   Wrap
 } from '@chakra-ui/react';
-import { useBreakpointValue } from '@chakra-ui/media-query';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { Fade } from 'react-reveal';
 import { useState, useEffect } from 'react';
@@ -27,7 +27,6 @@ import TagsArray from './TagsArray';
 
 export default function Experience({ color }) {
   const experience = ExperienceArray();
-  const isMobile = useBreakpointValue({ base: true, md: false });
   const options = TagsArray('ExperienceTags');
   const [selected, setSelected] = useState('');
   const [skills, setSkills] = useState(null);
@@ -52,7 +51,7 @@ export default function Experience({ color }) {
 
   return (
     <>
-      <Container maxW={isMobile ? '3xl' : '4xl'} id='experience'>
+      <Container maxW={'3xl'} id='experience'>
         <Stack
           as={Box}
           textAlign={'center'}
@@ -108,16 +107,15 @@ export default function Experience({ color }) {
                       <Flex>
                         <List align='left' spacing={3}>
                           {exp.listItems.map((item, index) => (
-                            <Flex wrap='nowrap'>
+                            <ListItem key={index}>
                               <ListIcon
+                                key={index}
                                 boxSize={6}
                                 as={ChevronRightIcon}
                                 color={`${color}.500`}
                               />
-                              <Text ml={2} display='block'>
-                                {item}
-                              </Text>
-                            </Flex>
+                              {item}
+                            </ListItem>
                           ))}
                         </List>
                       </Flex>
