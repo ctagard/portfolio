@@ -57,6 +57,6 @@
   - Kubernetes [../assets/kubernetes.svg]
   - React [../assets/react.svg]
 - List Items:
-  - Built Django application for simulation of radioactive detectability, with 1000 active users in the Department of Homeland Security.
+  - Built Django application for simulation of radioactive detectability, with 200 active users in the Department of Homeland Security.
   - Modernized software by migrating Python 2 code to Python 3, reducing the technical debt of the team. 
   - Created a high-performance website based on DHS specifications and successfully delivered the project ahead of deadlines.
